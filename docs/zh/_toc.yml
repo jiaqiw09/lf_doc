@@ -1,0 +1,69 @@
+root: README
+subtrees:
+- entries:
+  - file: getting-started
+    title: Getting Started
+  - file: installation
+    title: Installation
+  - file: data-preparation/README
+    title: Data Preparation
+  - file: llamaboard-web-ui
+    title: LlamaBoard Web UI
+  - file: training/README
+    title: Training
+    subtrees:
+    - entries:
+      - file: training/sft
+        title: SFT
+      - file: training/dpo
+        title: DPO
+  - file: inference/README
+    title: Inference
+    subtrees:
+    - entries:
+      - file: inference/deploy
+        title: Deploy
+  - file: advanced/README
+    title: Advanced
+    subtrees:
+    - entries:
+      - file: advanced/lora-and-quantization/README
+        title: Lora and Quantization
+        subtrees:
+        - entries:
+          - file: advanced/lora-and-quantization/lora
+            title: Lora
+          - file: advanced/lora-and-quantization/quantization
+            title: Quantization
+      - file: advanced/distributed/README
+        title: Distributed
+        subtrees:
+        - entries:
+          - file: advanced/distributed/fsdp
+            title: FSDP
+          - file: advanced/distributed/deepspeed
+            title: DeepSpeed
+          - file: advanced/distributed/parallel-dp-tp-ep-sp-cp
+            title: Parallel(DP, TP, EP, SP, CP)
+      - file: advanced/custom-kernels/README
+        title: Custom Kernels
+        subtrees:
+        - entries:
+          - file: advanced/custom-kernels/triton
+            title: Triton
+          - file: advanced/custom-kernels/fused-operators
+            title: Fused Operators
+          - file: advanced/custom-kernels/moe
+            title: MoE
+- entries:
+  - file: hyperparameters/data-argument
+    title: Data Argument
+  caption: Hyperparameters
+- entries:
+  - file: dev-guide/core/data-engine
+    title: DataEngine
+  - file: dev-guide/core/model-engine
+    title: ModelEngine
+  - file: dev-guide/core/trainer
+    title: Trainer
+  caption: Dev guide
